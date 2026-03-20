@@ -8,6 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 
+import javafx.scene.media.AudioClip;
+
 public class PomodoroController {
 
     private int segundosRestantes = 1500;
@@ -34,6 +36,8 @@ public class PomodoroController {
             } else  {
                 pomodoroTimer.stop();
                 timerLabel.setText("Tempo finalizado");
+                AudioClip som = new AudioClip(getClass().getResource("notificacao.mp3").toExternalForm());
+                som.play();
                 startButton.setText("Reiniciar");
                 segundosRestantes = 1500;
 
