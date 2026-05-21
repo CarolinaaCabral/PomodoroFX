@@ -40,3 +40,31 @@
 .btn-secondary:hover {
     -fx-background-color: rgba(255, 255, 255, 0.15);
 }
+
+.btn-modo {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 6px 24px;
+    -fx-cursor: hand;
+}
+
+.btn-modo:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-modo-ativo {
+    -fx-background-color: white;
+    -fx-text-fill: #272437;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 6px 24px;
+    -fx-cursor: hand;
+}
